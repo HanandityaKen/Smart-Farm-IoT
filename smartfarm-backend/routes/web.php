@@ -1,0 +1,10 @@
+<?php
+
+use Illuminate\Support\Facades\Route;
+
+Route::get('/', function () {
+    return response()->json([
+        'status'  => 'online',
+        'message' => 'SmartFarm Backend API is running successfully'
+    ]);
+});
